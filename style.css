@@ -1,0 +1,31 @@
+.gradient-custom {
+  background-image: url(./chennai.jpg);
+  background-position: center;
+}
+.carousel-indicators li {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cc1a1a;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+  color: var(--body-color);
+  display: contents;
+  overflow-x: hidden;
+  background: url("./istockphoto-1095421732-612x612.jpg");
+  /* background-color: linear-gradient(to left, #1a0000, #4d1f00); margin-bottom: 50px;; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
