@@ -50,6 +50,10 @@ db.on('value', (snapshot) => {
     console.log('raining')
     chennai.style.backgroundImage="url('rainy.jpg')";
     chennai.style.color="white"
+  }else{
+
+    chennai.style.backgroundImage="url('cloudy.jpg')";
+    chennai.style.color="black"
   }
   
   Temp.innerHTML=snapshot.val().Weather_Station_1.Temp1+"°C";
@@ -66,6 +70,10 @@ db.on('value', (snapshot) => {
     console.log('raining')
     madurai.style.backgroundImage="url('rainy.jpg')";
     madurai.style.color="white"
+  }else{
+
+    madurai.style.backgroundImage="url('cloudy.jpg')";
+    madurai.style.color="black"
   }
   
   Temp1.innerHTML=snapshot.val().Weather_Station_1.Temp1+"°C";
