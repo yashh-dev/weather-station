@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body  >
+    
+
+<section style="background: url('./istockphoto-1095421732-612x612.jpg')  ">
+    <h1><strong id="date" style="display: flex; color: black;justify-content:center;"> </strong> </h1>
+    <div class="container py-5 h-100">
+  
+      <div class="row d-flex justify-content-center align-items-center h-100" style="color: #282828;">
+        <div class="col-md-9 col-lg-7 col-xl-5">
+  
+          <div id="chennai" class="card mb-4 gradient-custom  container shadow p-3 bg-body rounded" style="border-radius: 25px;background-image: url('./cloudy.jpg');">
+            <div class="card-body p-4">
+  
+              <div id="demo1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo1" data-slide-to="1"></li>
+                  <li data-target="#demo1" data-slide-to="2"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-between mb-4 pb-2">
+                      <div>
+                        <h2 class="display-2" ><strong id="temp"></strong></h2>
+                        <p class=" mb-0" style="padding: 5px;">Chennai</p>
+                      </div>
+                      <div>
+                        <img src="chennai.png"
+                          width="150px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="card mb-4  container shadow p-3 bg-body rounded" style="border-radius: 25px;">
+            <div class="card-body p-4">
+  
+              <div id="demo2" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo2" data-slide-to="0"></li>
+                  <li data-target="#demo2" data-slide-to="1" class="active"></li>
+                  <li data-target="#demo2" data-slide-to="2"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                      <div class="flex-column">
+                        <p class="small" id="air"><strong></strong></p>
+                        <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                        <p class="mb-0"><strong>air 🌩</strong></p>
+                        
+                      </div>
+                      <div class="flex-column">
+                        <p class="small" id="humidity"><strong> </strong></p>
+                        <p class="mb-0"><strong>Humidity ☁️</strong></p>
+                        
+                      </div>
+                      <div class="flex-column">
+                        <p class="small" id="pressure"><strong></strong></p>
+                        <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                        <p class="mb-0"><strong>Pressure 🌫</strong></p> 
+                      </div>
+                      <div class="flex-column">
+                        <p class="small" id="rainfall"><strong></strong></p>
+                        
+                        <p class="mb-0"><strong>Rainfall 🌧 ☔️</strong></p> 
+                       
+                      </div>
+                      <!-- <div class="flex-column">
+                        <p class="small" id="temp"><strong></strong></p>
+                        <i class="fas fa-cloud-showers-heavy fa-2x mb-3" style="color: #ddd;"></i>
+                        <p class="mb-0"><strong>temp</strong></p> 
+ 
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div id="madurai" class="card mb-4 gradient-custom  container shadow p-3   rounded" style="border-radius: 300px;background-color: #141414;background-image: url('./cloudy.jpg');">
+            <div class="card-body p-4" style="border-radius: 300px;" >
+  
+              <div id="demo1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo1" data-slide-to="1"></li>
+                  <li data-target="#demo1" data-slide-to="2"></li>
+                </ul>
+                <!-- Carousel inner -->
+                <div class="carousel-inner" >
+                  <div class="carousel-item active">
+                    <div class="d-flex justify-content-between mb-4 pb-2">
+                      <div>
+                        <h2 class="display-2"><strong id="temp1"></strong></h2>
+                        <p class=" mb-0"> Madurai</p>
+                      </div>
+                      <div>
+                        <img src="madurai.png"
+                          width="200px" height="200px">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+          <div class="card  container shadow p-3 bg-body rounded" style="border-radius: 25px;">
+            <div class="card-body p-4">
+  
+              <div id="demo3" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators mb-0">
+                  <li data-target="#demo3" data-slide-to="0"></li>
+                  <li data-target="#demo3" data-slide-to="1"></li>
+                  <li data-target="#demo3" data-slide-to="2" class="active"></li>
+                </ul>
+                           <!-- Carousel inner -->
+                           <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div class="d-flex justify-content-around text-center mb-4 pb-3 pt-2">
+                                <div class="flex-column">
+                                  <p class="small" id="air1"><strong></strong></p>
+                                  <i class="fas fa-sun fa-2x mb-3" style="color: #ddd;"></i>
+                                  <p class="mb-0"><strong>air 🌩</strong></p>
+                                  
+                                </div>
+                                <div class="flex-column">
+                                  <p class="small" id="humidity1"><strong> </strong></p>
+                                  <p class="mb-0"><strong>Humidity ☁️</strong></p>
+                                  
+                                </div>
+                                <div class="flex-column">
+                                  <p class="small" id="pressure1"><strong></strong></p>
+                                  <i class="fas fa-cloud fa-2x mb-3" style="color: #ddd;"></i>
+                                  <p class="mb-0"><strong>Pressure 🌧</strong></p> 
+                                </div>
+                                <div class="flex-column">
+                                  <p class="small" id="rainfall1"><strong></strong></p>
+                                  
+                                  <p class="mb-0"><strong>Rainfall ☔️</strong></p> 
+                                 
+                                </div>
+                                <!-- <div class="flex-column">
+                                  <p class="small" id="temp1"><strong></strong></p>
+                                  <i class="fas fa-cloud-showers-heavy fa-2x mb-3" style="color: #ddd;"></i>
+                                  <p class="mb-0"><strong>temp</strong></p> 
+           
+                                </div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js" ></script>
+  <script src="fb.js"> </script>
+</body>
+
+</html>
