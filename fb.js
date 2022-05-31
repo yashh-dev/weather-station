@@ -61,9 +61,7 @@ db.on('value', (snapshot) => {
 
   air1.innerHTML='good';
   Humidity1.innerHTML=snapshot.val().Weather_Station_2.Humidity2+"%";
-  if(snapshot.val().Weather_Station_2.Pressure2>0){
-    Pressure1.innerHTML=snapshot.val().Weather_Station_2.Pressure2+"hPa";
-  }
+  Pressure1.innerHTML=snapshot.val().Weather_Station_1.Pressure1+"hPa";
   Rainfall1.innerHTML=snapshot.val().Weather_Station_2.Rainfall2>300?'Raining':'Not Raining';
   if(snapshot.val().Weather_Station_2.Rainfall2>300)
   {
