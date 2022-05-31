@@ -59,7 +59,7 @@ db.on('value', (snapshot) => {
   Temp.innerHTML=snapshot.val().Weather_Station_1.Temp1+"°C";
   console.log(snapshot.val());
 
-  air1.innerHTML=snapshot.val().Weather_Station_2.AirQuality2>50?'Bad':'good';
+  air1.innerHTML='good';
   Humidity1.innerHTML=snapshot.val().Weather_Station_2.Humidity2+"%";
   if(snapshot.val().Weather_Station_2.Pressure2>0){
     Pressure1.innerHTML=snapshot.val().Weather_Station_2.Pressure2+"hPa";
