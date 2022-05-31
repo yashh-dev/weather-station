@@ -37,54 +37,38 @@
  var Pressure1 = document.getElementById('pressure1');
  var Rainfall1 = document.getElementById('rainfall1');
  var Temp1 = document.getElementById('temp1');
-
-var db =  firebase.database().ref('Weather_Monitoring_Station/');
+ var chennai=document.getElementById('chennai');
+ var madurai=document.getElementById('madurai')
+ var db =  firebase.database().ref('Weather_Monitoring_Station/');
 db.on('value', (snapshot) => {
-  var rain1,rain2;
-  if(snapshot.val().Weather_Station_1.Rainfall1>300){
-    rain1='Raining'
-  }else{
-    rain1='Not Raining'
-  }
-  if(snapshot.val().Weather_Station_2.Rainfall2>300){
-    rain1='Raining'
-  }else{
-    rain1='Not Raining'
-  }
-  var air1,air2;
-  if(snapshot.val().Weather_Station_1.AirQuality1>2000){
-    air1='moderate'
-  }
-  else if(snapshot.val().Weather_Station_1.AirQuality1>3000){
-    air1='bad'
-  }
-  else{
-    air1='good'
-  }
-  if(snapshot.val().Weather_Station_2.AirQuality2>2000){
-    air2='moderate'
-  }
-  else if(snapshot.val().Weather_Station_2.AirQuality2>3000){
-    air2='bad'
-  }
-  else{
-    air2='good'
-  }
-  air2='good'
-  rain2='good'
-  console.log(air1+" "+air2+" "+rain1+" "+rain2)
-  air.innerHTML=air1;
+  air.innerHTML=snapshot.val().Weather_Station_1.AirQuality1>50?'Bad':'good';
   Humidity.innerHTML=snapshot.val().Weather_Station_1.Humidity1+"%";
   Pressure.innerHTML=snapshot.val().Weather_Station_1.Pressure1+"hPa";
-  Rainfall.innerHTML=rain1;
+  Rainfall.innerHTML=snapshot.val().Weather_Station_1.Rainfall1>300?'Raining':'Not Raining';
+  if(snapshot.val().Weather_Station_1.Rainfall1>300)
+  {
+    console.log('raining')
+    chennai.style.backgroundImage="url('rainy.jpg')";
+    chennai.style.color="white"
+  }
+  
   Temp.innerHTML=snapshot.val().Weather_Station_1.Temp1+"°C";
   console.log(snapshot.val());
 
-  air1.innerHTML=air2;
+  air1.innerHTML=snapshot.val().Weather_Station_2.AirQuality2>50?'Bad':'good';
   Humidity1.innerHTML=snapshot.val().Weather_Station_2.Humidity2+"%";
-  Pressure1.innerHTML=snapshot.val().Weather_Station_2.Pressure2+"hPa";
-  Rainfall1.innerHTML=rain2;
-  Temp1.innerHTML=snapshot.val().Weather_Station_2.Temp2+"°C";
+  if(snapshot.val().Weather_Station_2.Pressure2>0){
+    Pressure1.innerHTML=snapshot.val().Weather_Station_2.Pressure2+"hPa";
+  }
+  Rainfall1.innerHTML=snapshot.val().Weather_Station_2.Rainfall2>300?'Raining':'Not Raining';
+  if(snapshot.val().Weather_Station_2.Rainfall2>300)
+  {
+    console.log('raining')
+    madurai.style.backgroundImage="url('rainy.jpg')";
+    madurai.style.color="white"
+  }
+  
+  Temp1.innerHTML=snapshot.val().Weather_Station_1.Temp1+"°C";
   console.log(snapshot.val());
 });
 console.log("okey");
